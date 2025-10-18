@@ -32,6 +32,14 @@ body {
 .purple {
     color: #6415ff;
 }
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
 
 section {
     padding: 0 32px;
@@ -40,14 +48,87 @@ section {
 main {
     margin-bottom: 96px;
 }
+.header__email--btn:hover {
+ background-color: rgba(60, 13, 153);
+}
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+button {
+    cursor: pointer;
+}
+h1 {
+    display: block;
+        font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 
+
+
+
+
+
+
+
+p {
+      display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 
 /* 
 
 NAVBAR ↓
 
 */
+.login {
+    margin-left: 48px;
+}
 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb( 0,0,0,0.05);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  color: #6415ff;
+
+
+}
 
 nav {
     display: flex;
@@ -58,6 +139,34 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+.nav__link--primary:hover {
+        background-color: rgba(80, 17, 204);
+    color: white
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+
+}
+.signup-btn {
+  background-color: #6415ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+
+
+.nav__logo--title {
+    font-weight: 900;
+        font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
+}
+
 
 .nav__logo {
     display: flex;
@@ -73,7 +182,17 @@ nav {
     border-bottom: 2px solid transparent;
     position: relative;
     transition: all 300ms;
-}    
+    margin: 0 24px;
+}   
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+
+
+
 .nav__logo--img {
     height: 40px;
     width: 40px;
@@ -98,9 +217,14 @@ nav {
 
 }
 .nav__link::after {
+    content:"" ;
     position: absolute;
     left: 0;
     bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms ease;
 }
 
 a {
@@ -119,7 +243,7 @@ a {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
-.modal {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -137,15 +261,14 @@ a {
     transition: all 300ms ease;
 }
 
-.modal__links {
+.menu__links {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.modal__link {
+.menu__link {
     color: #1a202c;
     font-size: 18px;
     font-weight: 600;
@@ -155,7 +278,7 @@ a {
     border-bottom: 2px solid transparent;
 }
 
-.modal__link--primary {
+.menu__link--primary {
     color: #f7fafc;
     padding: 12px 32px;
     background: #6415ff;
@@ -188,7 +311,21 @@ header .row {
     align-items: center;
     justify-content: space-between;
 }
+.header__img {
+        width: 100%;
+    max-width: 768px;
+}
 
+img {
+  overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h1 {
+        font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
+}
 
 /* 
 
@@ -301,6 +438,12 @@ footer {
     margin-bottom: -32px;
     position: relative;
     overflow: hidden;
+}
+.footer__columns {
+    margin-top: -48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
