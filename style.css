@@ -13,7 +13,10 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
 .row {
   width: 100%;
@@ -90,7 +93,11 @@ button {
   border: none;
 }
 
-/* NAVIGATION */
+/*
+
+ NAVIGATION
+ 
+ */
 
 nav {
   padding-top: 32px;
@@ -264,14 +271,27 @@ nav {
 
 /* HEADER / ABOUT US */
 
-section {
-  padding: 0 32px;
-}
+
+
 header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+h2 {
+  display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+
+
 .header__description {
   width: 40%;
 }
@@ -361,12 +381,20 @@ header {
   max-width: 768px;
 }
 
-/* FEATURES */
+/*
+
+FEATURES
+
+*/
 
 #features {
   position: relative;
 
 }
+section {
+    padding: 0 32px;
+}
+
 #features .row__narrow {
   display: flex;
   flex-direction: column;
@@ -422,6 +450,30 @@ header {
   
 
 }
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+
+
+
 .feature__para {
   margin-top: 16px;
   font-size: 16px;
@@ -446,6 +498,7 @@ header {
   max-width: 1024px;
   margin: 0 auto;
 }
+
 
 /* QUALITY WORK */
 
