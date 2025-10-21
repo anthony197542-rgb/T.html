@@ -1202,6 +1202,16 @@ footer {
   color: #cbd5e0;
   font-weight: 500;
 }
+.footer__blob {
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    transform: translateX(-80px) translateY(-128px);
+    z-index: 1;
+    opacity: 0.5;
+}
 .footer__blob--1 {
   position: absolute;
   top: 0;
